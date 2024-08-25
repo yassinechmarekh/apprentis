@@ -413,3 +413,90 @@ header nav .phone_nav a:hover {
   transition: 0.3s ease-in-out;
 }
 /* end about-sec */
+
+/* start course_sec */
+.course_sec {
+  padding: 40px 0;
+}
+
+.course_sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course_sec .title_sec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.course_sec .title_sec h1 {
+  font-size: 40px;
+  font-family: "Lobster Two", sans-serif;
+}
+
+.course_sec .title_sec p {
+  width: 80%;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.course_sec .courses {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course_sec .courses .single_course {
+  width: 48%;
+  background-color: #fff;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.course_sec .courses .single_course:hover{
+    box-shadow: 10px 15px 20px #94949428;
+}
+
+.course_sec .courses .single_course img {
+  width: 50%;
+  border-right: 2px solid var(--main-color);
+}
+
+.course_sec .courses .single_course .content_text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.course_sec .courses .single_course .content_text .name_course {
+  padding: 5px 15px;
+  width: fit-content;
+  background-color: var(--dark-color);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Lobster Two", sans-serif;
+}
+
+.course_sec .courses .single_course .content_text h2 {
+  font-size: 18px;
+}
+
+.course_sec .courses .single_course .content_text h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.course_sec .courses .single_course .content_text p {
+  font-size: 12px;
+}
+/* end course_sec */
