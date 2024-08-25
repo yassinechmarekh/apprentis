@@ -425,19 +425,19 @@ header nav .phone_nav a:hover {
   gap: 20px;
 }
 
-.course_sec .title_sec {
+.title_sec {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
 }
 
-.course_sec .title_sec h1 {
+.title_sec h1 {
   font-size: 40px;
   font-family: "Lobster Two", sans-serif;
 }
 
-.course_sec .title_sec p {
+.title_sec p {
   width: 80%;
   font-size: 14px;
   text-align: center;
@@ -460,8 +460,8 @@ header nav .phone_nav a:hover {
   margin-bottom: 20px;
 }
 
-.course_sec .courses .single_course:hover{
-    box-shadow: 10px 15px 20px #94949428;
+.course_sec .courses .single_course:hover {
+  box-shadow: 10px 15px 20px #94949428;
 }
 
 .course_sec .courses .single_course img {
@@ -500,3 +500,205 @@ header nav .phone_nav a:hover {
   font-size: 12px;
 }
 /* end course_sec */
+
+/* start tarif_sec */
+.tarif_sec {
+  padding: 40px 0;
+}
+
+.tarif_sec .plans {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.tarif_sec .single_plan {
+  width: 23%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.tarif_sec .single_plan .title_plan {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tarif_sec .single_plan .title_plan img {
+  width: 50px;
+}
+
+.tarif_sec .single_plan .title_plan h1 {
+  font-size: 30px;
+  font-family: "Lobster Two", sans-serif;
+}
+
+.tarif_sec .single_plan .text_plan {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.tarif_sec .single_plan ul {
+  color: var(--parag-color);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.tarif_sec .single_plan ul li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.tarif_sec .single_plan ul li i {
+  color: green;
+}
+
+.tarif_sec .single_plan .bottom_plan a {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.tarif_sec .single_plan .bottom_plan a:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+/* end tarif_sec */
+
+/* start contact_sec */
+.contact_sec {
+  padding: 40px 0;
+}
+
+.contact_sec .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact_sec .icons_contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_sec .icons_contact li {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact_sec .icons_contact li span {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.contact_sec .icons_contact li span i {
+  font-size: 25px;
+}
+
+.contact_sec .icons_contact li .icons {
+  width: 60px;
+  height: 60px;
+  background-color: var(--main-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.contact_sec .contact_form {
+  display: flex;
+  background-color: #f4c65223;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contact_sec .contact_form .content_contact {
+  width: 50%;
+  padding: 20px;
+  border-right: 2px solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact_sec .contact_form .content_contact p {
+  font-size: 14px;
+  color: var(--dark-color);
+}
+
+.contact_sec .contact_form .content_contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact_sec .contact_form .content_contact form .two_inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.contact_sec .contact_form .content_contact form .two_inputs input{
+  width: 50%;
+}
+
+.contact_sec .contact_form .content_contact form .one_input textarea,
+.contact_sec .contact_form .content_contact form .one_input input{
+  width: 100%;
+}
+
+.contact_sec .contact_form .content_contact form .one_input textarea,
+.contact_sec .contact_form .content_contact form .one_input input,
+.contact_sec .contact_form .content_contact form .two_inputs input {
+  padding: 7px 10px;
+  border: 1px solid #6666664b;
+  outline: none;
+  border-radius: 5px;
+}
+
+.contact_sec .contact_form .content_contact form .one_input textarea:focus,
+.contact_sec .contact_form .content_contact form .one_input input:focus,
+.contact_sec .contact_form .content_contact form .two_inputs input:focus{
+  border-color: var(--main-color);
+}
+
+.contact_sec .contact_form .content_contact form button{
+  padding: 8px 0;
+  background-color: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.contact_sec .contact_form .content_contact form button:hover{
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.contact_sec .contact_form iframe {
+  width: 50%;
+}
+/* end contact_sec */
