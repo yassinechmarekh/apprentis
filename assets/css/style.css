@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* .lobster-two-regular {
+    font-family: "Lobster Two", sans-serif;
+  } */
+
+/* .heebouniquifier {
+    font-family: "Heebo", sans-serif;
+  } */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+:root {
+  --main-color: #f4c552;
+  --dark-color: #273458;
+  --parag-color: #666666;
+  --background: #f9f9f9;
+  --black: #222222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-color);
+}
+
+p {
+  color: var(--parag-color);
+}
+
+*::selection {
+  background-color: var(--dark-color);
+  color: var(--main-color);
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* start header */
+header .top_header {
+  padding: 10px 0;
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+header .top_header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .top_header .follow-us,
+header .top_header .header_info li,
+header .top_header .header_info {
+  display: flex;
+  align-items: center;
+}
+
+header .top_header .header_info {
+  gap: 20px;
+}
+
+header .top_header .header_info li {
+  gap: 10px;
+}
+
+header .top_header .header_info li i {
+  font-size: 16px;
+}
+
+header .top_header .header_info li a,
+header .top_header .header_info li span {
+  font-size: 14px;
+  color: #fff;
+}
+
+header .top_header .follow-us {
+  gap: 5px;
+}
+
+header .top_header .follow-us li a i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+header .top_header .follow-us li a:hover i {
+  background-color: var(--main-color);
+  color: var(--dark-color);
+}
+
+header nav {
+  padding: 10px 0;
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+header nav .logo img {
+  width: 60px;
+}
+
+header nav .logo h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+header nav .page_nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav .page_nav li {
+  padding: 3px 0;
+  position: relative;
+}
+
+header nav .page_nav li.active a {
+  color: var(--main-color);
+  transition: 0.3s ease-in-out;
+}
+
+header nav .page_nav li.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: var(--main-color);
+  border-radius: 30px;
+}
+
+header nav .page_nav li a {
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+header nav .phone_nav a {
+  padding: 10px 20px;
+  background-color: var(--dark-color);
+  color: #fff;
+  border: 2px solid var(--dark-color);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+header nav .phone_nav a i {
+  font-size: 16px;
+}
+
+header nav .phone_nav a span {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+header nav .phone_nav a:hover{
+    background-color: transparent;
+    color: var(--dark-color);
+}
+
+/* end header */
