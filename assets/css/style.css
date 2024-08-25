@@ -658,12 +658,12 @@ header nav .phone_nav a:hover {
   gap: 10px;
 }
 
-.contact_sec .contact_form .content_contact form .two_inputs input{
+.contact_sec .contact_form .content_contact form .two_inputs input {
   width: 50%;
 }
 
 .contact_sec .contact_form .content_contact form .one_input textarea,
-.contact_sec .contact_form .content_contact form .one_input input{
+.contact_sec .contact_form .content_contact form .one_input input {
   width: 100%;
 }
 
@@ -678,11 +678,11 @@ header nav .phone_nav a:hover {
 
 .contact_sec .contact_form .content_contact form .one_input textarea:focus,
 .contact_sec .contact_form .content_contact form .one_input input:focus,
-.contact_sec .contact_form .content_contact form .two_inputs input:focus{
+.contact_sec .contact_form .content_contact form .two_inputs input:focus {
   border-color: var(--main-color);
 }
 
-.contact_sec .contact_form .content_contact form button{
+.contact_sec .contact_form .content_contact form button {
   padding: 8px 0;
   background-color: var(--main-color);
   color: #fff;
@@ -693,7 +693,7 @@ header nav .phone_nav a:hover {
   transition: 0.3s ease-in-out;
 }
 
-.contact_sec .contact_form .content_contact form button:hover{
+.contact_sec .contact_form .content_contact form button:hover {
   background-color: transparent;
   color: var(--main-color);
 }
@@ -702,3 +702,159 @@ header nav .phone_nav a:hover {
   width: 50%;
 }
 /* end contact_sec */
+
+/* start footer */
+footer {
+  background-color: var(--dark-color);
+}
+
+footer .footer_sections {
+  padding: 20px 0;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+footer .footer_sections .footer_single_sec {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer_sections .footer_single_sec h1 {
+  font-size: 30px;
+  font-family: "Lobster Two", sans-serif;
+}
+
+footer .footer_sections .footer_single_sec .content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer .footer_sections .footer_single_sec .contact_info {
+  color: var(--background);
+  line-height: 1.6;
+}
+
+footer .footer_sections .footer_single_sec .contact_info li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+footer .footer_sections .footer_single_sec .contact_info li i {
+  font-size: 16px;
+}
+
+footer .footer_sections .footer_single_sec .contact_info li span {
+  font-size: 14px;
+}
+
+footer .footer_sections .footer_single_sec .social_links {
+  padding: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+footer .footer_sections .footer_single_sec .social_links a {
+  color: var(--background);
+}
+
+footer .footer_sections .footer_single_sec .social_links li {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--background);
+  border-radius: 50%;
+}
+
+footer .footer_sections .footer_single_sec .social_links li i {
+  font-size: 16px;
+}
+
+footer .footer_sections .footer_single_sec .social_links li:hover {
+  background-color: var(--main-color);
+  border: none;
+  color: var(--dark-color);
+}
+
+footer .footer_sections .footer_single_sec .quick_links {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer .footer_sections .footer_single_sec .quick_links li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+footer .footer_sections .footer_single_sec .quick_links li i {
+  font-size: 10px;
+  color: #fff;
+}
+
+footer .footer_sections .footer_single_sec .quick_links li a {
+  color: #fff;
+}
+
+footer .footer_sections .footer_single_sec .quick_links li a::first-letter{
+  text-transform: capitalize;
+}
+
+footer .footer_sections .footer_single_sec .quick_links li:hover {
+  transform: scale(1.05);
+}
+
+footer .footer_sections .footer_single_sec .quick_links li:hover i,
+footer .footer_sections .footer_single_sec .quick_links li:hover a {
+  color: var(--main-color);
+}
+
+footer .footer_sections .footer_single_sec .gallery {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+footer .footer_sections .footer_single_sec .gallery img {
+  width: 32%;
+  border: 5px solid var(--main-color);
+  margin-bottom: 5px;
+}
+
+footer .bottom_footer{
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #66666680;
+}
+
+footer .bottom_footer p{
+  font-size: 14px;
+  text-align: center;
+  color: var(--background);
+}
+
+footer .bottom_footer p span{
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+footer .bottom_footer p a{
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+footer .bottom_footer p a:hover{
+  color: var(--main-color);
+}
+/* end footer */
