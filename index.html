@@ -10,7 +10,10 @@
 
     <!-- link to file css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- font awesome -->
     <link
@@ -75,18 +78,51 @@
       </nav>
     </header>
 
-    
+    <section class="hero-sec">
+      <!-- Swiper -->
+      <div class="slide-swp mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/slide-1.jpg" alt="" />
+            <div class="content_swp">
+                <h1>Bienvenue chez Apprentis Center</h1>
+                <p>Apprentis Center est votre centre d'apprentissage dédié à offrir des cours de soutien en langues, adaptés à vos besoins et objectifs.</p>
+                <a href="#">savoir plus</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/slide-2.jpg" alt="" />
+            <div class="content_swp">
+                <h1>À propos de Apprentis Center</h1>
+                <p>Apprentis Center est spécialisé dans les cours de soutien linguistique pour tous les niveaux. Nous offrons des programmes sur mesure, conçus pour renforcer vos compétences linguistiques et vous préparer aux examens officiels.</p>
+                <a href="#">Découvrir notre histoire</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/slide-3.jpg" alt="" />
+            <div class="content_swp">
+                <h1>Nos Cours</h1>
+                <p>Nous proposons une gamme diversifiée de cours, allant des langues vivantes telles que l'anglais, le français, l'espagnol et l'allemand, aux langues plus spécialisées comme le chinois et l'arabe. Chaque cours est conçu pour répondre aux besoins spécifiques de nos étudiants.</p>
+                <a href="#">Explorer nos cours</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
     <script src="/assets/js/script.js"></script>
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
-    <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
+          dynamicBullests: true,
         },
+        autoplay: {
+          delay: 2500,
+        },
+        loop: true,
       });
     </script>
   </body>
