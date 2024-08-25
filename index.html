@@ -64,7 +64,7 @@
           </a>
           <ul class="page_nav">
             <li class="active"><a href="#">accueil</a></li>
-            <li><a href="#">a propos</a></li>
+            <li><a href="#about">a propos</a></li>
             <li><a href="#">cours</a></li>
             <li><a href="#">tarif</a></li>
             <li><a href="#">contact</a></li>
@@ -85,29 +85,89 @@
           <div class="swiper-slide">
             <img src="assets/images/slide-1.jpg" alt="" />
             <div class="content_swp">
-                <h1>Bienvenue chez Apprentis Center</h1>
-                <p>Apprentis Center est votre centre d'apprentissage dédié à offrir des cours de soutien en langues, adaptés à vos besoins et objectifs.</p>
-                <a href="#">savoir plus</a>
+              <h1>Bienvenue chez Apprentis Center</h1>
+              <p>
+                Apprentis Center est votre centre d'apprentissage dédié à offrir
+                des cours de soutien en langues, adaptés à vos besoins et
+                objectifs.
+              </p>
+              <a href="#">savoir plus</a>
             </div>
           </div>
           <div class="swiper-slide">
             <img src="assets/images/slide-2.jpg" alt="" />
             <div class="content_swp">
-                <h1>À propos de Apprentis Center</h1>
-                <p>Apprentis Center est spécialisé dans les cours de soutien linguistique pour tous les niveaux. Nous offrons des programmes sur mesure, conçus pour renforcer vos compétences linguistiques et vous préparer aux examens officiels.</p>
-                <a href="#">Découvrir notre histoire</a>
+              <h1>À propos de Apprentis Center</h1>
+              <p>
+                Apprentis Center est spécialisé dans les cours de soutien
+                linguistique pour tous les niveaux. Nous offrons des programmes
+                sur mesure, conçus pour renforcer vos compétences linguistiques
+                et vous préparer aux examens officiels.
+              </p>
+              <a href="#">Découvrir notre histoire</a>
             </div>
           </div>
           <div class="swiper-slide">
             <img src="assets/images/slide-3.jpg" alt="" />
             <div class="content_swp">
-                <h1>Nos Cours</h1>
-                <p>Nous proposons une gamme diversifiée de cours, allant des langues vivantes telles que l'anglais, le français, l'espagnol et l'allemand, aux langues plus spécialisées comme le chinois et l'arabe. Chaque cours est conçu pour répondre aux besoins spécifiques de nos étudiants.</p>
-                <a href="#">Explorer nos cours</a>
+              <h1>Nos Cours</h1>
+              <p>
+                Nous proposons une gamme diversifiée de cours, allant des
+                langues vivantes telles que l'anglais, le français, l'espagnol
+                et l'allemand, aux langues plus spécialisées comme le chinois et
+                l'arabe. Chaque cours est conçu pour répondre aux besoins
+                spécifiques de nos étudiants.
+              </p>
+              <a href="#">Explorer nos cours</a>
             </div>
           </div>
         </div>
         <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="about-sec" id="about">
+      <div class="container">
+        <div class="about_content">
+          <h1>À propos d'Apprentis Center</h1>
+          <div class="about_text">
+            <p>
+                Apprentis Center est un centre de soutien linguistique dédié à
+                l’apprentissage des langues. Notre mission est de fournir un
+                environnement d'apprentissage enrichissant et efficace, où chaque
+                étudiant peut développer ses compétences linguistiques à son propre
+                rythme. Que vous souhaitiez améliorer votre anglais pour des raisons
+                professionnelles ou apprendre une nouvelle langue par passion,
+                Apprentis Center est là pour vous accompagner.
+              </p>
+              <div class="avantages">
+                <p>Avantages d'étudier avec nous :</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Cours personnalisés</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Enseignants qualifiés</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Flexibilité des horaires</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Petits groupes d'apprentissage</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Ressources pédagogiques diversifiées</span></li>
+                </ul>
+              </div>
+          </div>
+          <div class="about_bottom">
+            <a href="#" class="btn_contact">contactez-nous</a>
+            <ul>
+                <a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-linkedin"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-x-twitter"></i></li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="about_images">
+            <img class="main_img" src="assets/images/about-1.jpg" alt="">
+            <div class="second_img">
+                <img src="assets/images/about-2.jpg" alt="">
+                <img src="assets/images/about-3.jpg" alt="">
+            </div>
+        </div>
       </div>
     </section>
 
@@ -119,9 +179,9 @@
           el: ".swiper-pagination",
           dynamicBullests: true,
         },
-        autoplay: {
-          delay: 2500,
-        },
+        // autoplay: {
+        //   delay: 2500,
+        // },
         loop: true,
       });
     </script>
