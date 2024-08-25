@@ -543,6 +543,23 @@ header nav .phone_nav a:hover {
   line-height: 1.6;
 }
 
+.tarif_sec .single_plan .price {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.tarif_sec .single_plan .price h2 {
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.tarif_sec .single_plan .price h4 {
+  font-size: 18px;
+  color: var(--parag-color);
+}
+
 .tarif_sec .single_plan ul {
   color: var(--parag-color);
   line-height: 1.6;
@@ -805,7 +822,7 @@ footer .footer_sections .footer_single_sec .quick_links li a {
   color: #fff;
 }
 
-footer .footer_sections .footer_single_sec .quick_links li a::first-letter{
+footer .footer_sections .footer_single_sec .quick_links li a::first-letter {
   text-transform: capitalize;
 }
 
@@ -830,31 +847,31 @@ footer .footer_sections .footer_single_sec .gallery img {
   margin-bottom: 5px;
 }
 
-footer .bottom_footer{
+footer .bottom_footer {
   padding: 10px 0;
   display: flex;
   justify-content: center;
   border-top: 1px solid #66666680;
 }
 
-footer .bottom_footer p{
+footer .bottom_footer p {
   font-size: 14px;
   text-align: center;
   color: var(--background);
 }
 
-footer .bottom_footer p span{
+footer .bottom_footer p span {
   font-weight: bold;
   color: var(--main-color);
 }
 
-footer .bottom_footer p a{
+footer .bottom_footer p a {
   color: #fff;
   text-decoration: underline;
   transition: 0.3s ease-in-out;
 }
 
-footer .bottom_footer p a:hover{
+footer .bottom_footer p a:hover {
   color: var(--main-color);
 }
 /* end footer */
