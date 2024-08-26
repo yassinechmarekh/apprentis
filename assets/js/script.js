@@ -4,9 +4,9 @@ var swiper = new Swiper(".slide-swp", {
     el: ".swiper-pagination",
     dynamicBullests: true,
   },
-  // autoplay: {
-  //   delay: 2500,
-  // },
+  autoplay: {
+    delay: 2500,
+  },
   loop: true,
 });
 
@@ -18,9 +18,9 @@ var swiper = new Swiper(".plans", {
   },
   slidesPerView: 4,
   spaceBetween: 30,
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   loop: true,
   breakpoints: {
     1500: {
@@ -53,3 +53,29 @@ function close_menu(){
   menu.classList.remove("active");
   bg_overlay.classList.remove("active");
 }
+
+
+// Scroll to top & show or hide the button
+let back_to_top = document.querySelector(".btn_back_to_top");
+
+function toggleBackToTopButton() {
+  if (window.scrollY === 0) {
+    back_to_top.style.display = "none";
+  } else {
+    back_to_top.style.display = "block";
+    console.log('test');
+  }
+}
+
+toggleBackToTopButton();
+
+window.addEventListener("scroll", toggleBackToTopButton);
+
+back_to_top.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+

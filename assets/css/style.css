@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -53,31 +52,59 @@ body {
   background-color: var(--background);
 }
 
-
 /* start scrollbar */
 
 ::-webkit-scrollbar {
   width: 3px;
- }
- 
+}
+
 ::-webkit-scrollbar-track {
   border: 7px solid var(--background);
   box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   background-color: #d4d4d8;
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background: var(--dark-color);
   border-radius: 6px;
   cursor: pointer;
 }
- 
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--main-color);
 }
 
 /* end scrollbar */
+
+
+/* start btn back to top */
+.btn_back_to_top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 50%;
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.btn_back_to_top:hover{
+  background-color: var(--main-color);
+  color: var(--dark-color);
+}
+
+/* end btn back to top */
+
 
 /* start header */
 header .top_header {
@@ -244,6 +271,7 @@ header nav .open_menu {
 }
 
 .hero-sec .slide-swp .swiper-slide {
+  min-height: 350px;
   position: relative;
 }
 
@@ -1018,6 +1046,12 @@ footer .bottom_footer p a:hover {
   }
 }
 
+@media (max-width: 700px) {
+  .hero-sec .slide-swp .swiper-slide img{
+    width: auto;
+  }
+}
+
 @media (max-width: 550px) {
   header nav .page_nav li a,
   header .top_header .follow-us,
@@ -1288,10 +1322,18 @@ footer .bottom_footer p a:hover {
     font-size: 12px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .course_sec .courses .single_course img {
-    width: 45%;
+    width: 40%;
   }
+  .course_sec .courses .single_course .content_text {
+    gap: 10px;
+  }
+  .course_sec .courses .single_course .content_text p {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
   .course_sec .courses .single_course .content_text {
     padding: 10px;
     gap: 3px;
@@ -1302,8 +1344,8 @@ footer .bottom_footer p a:hover {
   .course_sec .courses .single_course .content_text h4 {
     font-size: 12px;
   }
-  .course_sec .courses .single_course .content_text .name_course,
-  .course_sec .courses .single_course .content_text p {
+  .course_sec .courses .single_course .content_text .name_course {
+    padding: 5px 10px;
     font-size: 10px;
   }
 }
