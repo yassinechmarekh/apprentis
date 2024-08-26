@@ -4,9 +4,9 @@ var swiper = new Swiper(".slide-swp", {
     el: ".swiper-pagination",
     dynamicBullests: true,
   },
-  autoplay: {
-    delay: 2500,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  // },
   loop: true,
 });
 
@@ -38,3 +38,18 @@ var swiper = new Swiper(".plans", {
     },
   },
 });
+
+
+// open & close menu
+menu = document.querySelector('.page_nav');
+bg_overlay = document.querySelector('.bg_overlay');
+
+function open_menu(){
+  menu.classList.add("active");
+  bg_overlay.classList.add("active");
+}
+
+function close_menu(){
+  menu.classList.remove("active");
+  bg_overlay.classList.remove("active");
+}

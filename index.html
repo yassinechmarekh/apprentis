@@ -63,6 +63,14 @@
             <h1>apprentis center</h1>
           </a>
           <ul class="page_nav">
+            <div class="top_menu_mobile">
+              <div class="logo_mobile">
+                <img src="assets/images/logo/logo.png" alt="" />
+                <h1>apprentis center</h1>
+              </div>
+              <div class="close_menu"><i onclick="close_menu()" class="fa-solid fa-xmark"></i></div>
+              <div class="bg_overlay" onclick="close_menu()"></div>
+            </div>
             <li class="active"><a href="#">accueil</a></li>
             <li><a href="#about">a propos</a></li>
             <li><a href="#course">cours</a></li>
@@ -74,6 +82,7 @@
               ><i class="fa-solid fa-phone"></i> <span>appeler</span></a
             >
           </div>
+          <div class="open_menu"><i onclick="open_menu()" class="fa-solid fa-bars"></i></div>
         </div>
       </nav>
     </header>
