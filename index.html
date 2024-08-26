@@ -497,19 +497,22 @@
               ci-contre, et notre équipe vous répondra dans les plus brefs
               délais.
             </p>
-            <form action="">
+            <form onsubmit="sendEmail(); return false;">
               <div class="two_inputs">
-                <input type="text" placeholder="Votre Nom" autofocus>
-                <input type="text" placeholder="Votre Email">
+                <input type="text" id="name" placeholder="Votre Nom" autofocus>
+                <input type="text" id="email" placeholder="Votre Email">
               </div>
               <div class="one_input">
-                <input type="text" placeholder="Sujet">
+                <input type="text" id="subject" placeholder="Sujet">
               </div>
               <div class="one_input">
-                <textarea placeholder="Message" cols="30" rows="10"></textarea>
+                <textarea placeholder="Message" id="message" rows="10"></textarea>
               </div>
               <button type="submit">Envoyer</button>
             </form>
+            <div class="alert-success">
+              <p>Votre message a été envoyé avec succès. Merci de nous avoir contactés !</p>
+            </div>
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.530618969277!2d-8.494183724715073!3d33.22639966088578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda91f2aa03ac2ad%3A0x47897a248e896926!2scentre%20apprentis!5e0!3m2!1sfr!2sma!4v1724612423788!5m2!1sfr!2sma"
@@ -586,6 +589,7 @@
 
     <!-- link js  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

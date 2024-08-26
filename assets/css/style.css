@@ -777,6 +777,23 @@ header nav .open_menu {
 .contact_sec .contact_form iframe {
   width: 50%;
 }
+
+.contact_sec .contact_form .content_contact .alert-success,
+.contact_sec .contact_form .content_contact form.send{
+  display: none;
+}
+
+.contact_sec .contact_form .content_contact .alert-success.active{
+  display: block;
+  padding: 20px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
 /* end contact_sec */
 
 /* start footer */
@@ -1376,9 +1393,10 @@ footer .bottom_footer p a:hover {
 
 /* start contact_sec */
 @media (max-width: 950px) {
-  .contact_sec .icons_contact li spann {
+  .contact_sec .icons_contact li span {
     font-size: 15px;
   }
+  .contact_sec .contact_form .content_contact .alert-success.active,
   .contact_sec .contact_form .content_contact form button,
   .contact_sec .contact_form .content_contact p {
     font-size: 13px;
@@ -1407,6 +1425,14 @@ footer .bottom_footer p a:hover {
 @media (max-width: 550px) {
   .contact_sec {
     padding: 30px 0;
+  }
+  .contact_sec .icons_contact li span {
+    font-size: 14px;
+  }
+  .contact_sec .contact_form .content_contact .alert-success.active,
+  .contact_sec .contact_form .content_contact form button,
+  .contact_sec .contact_form .content_contact p {
+    font-size: 12px;
   }
   .contact_sec .icons_contact {
     flex-direction: column;
