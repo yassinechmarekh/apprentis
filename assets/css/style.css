@@ -75,7 +75,66 @@ body {
   background: var(--main-color);
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 /* end scrollbar */
+
+
+/* start loader */
+
+#loader-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  z-index: 1000;
+}
+
+.loader {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  background: var(--main-color);
+  color: #FFF;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+
+.loader::after, .loader::before {
+  content: '';
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: var(--dark-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  box-sizing: border-box;
+  animation: animloader 0.3s  0.45s  linear infinite alternate;
+}
+.loader::before {
+  left: -20px;
+  animation-delay: 0s;
+}
+
+@keyframes animloader {
+  0%   { height: 48px} 
+  100% { height: 4px}
+}
+
+
+/* end loader */
 
 
 /* start btn back to top */
@@ -225,7 +284,7 @@ header nav .page_nav li.active::after {
 }
 
 header nav .page_nav li a {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--black);
   text-transform: capitalize;
 }
@@ -830,7 +889,7 @@ footer .footer_sections .footer_single_sec .content {
 
 footer .footer_sections .footer_single_sec .contact_info {
   color: var(--background);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 footer .footer_sections .footer_single_sec .contact_info li {
@@ -963,7 +1022,9 @@ footer .bottom_footer p a:hover {
     align-items: center;
     gap: 10px;
   }
-  header nav .page_nav li a,
+  header nav .page_nav li a{
+    font-size: 14px;
+  }
   header .top_header .follow-us,
   header .top_header .header_info li a,
   header .top_header .header_info li span {
@@ -1070,7 +1131,6 @@ footer .bottom_footer p a:hover {
 }
 
 @media (max-width: 550px) {
-  header nav .page_nav li a,
   header .top_header .follow-us,
   header .top_header .header_info li a,
   header .top_header .header_info li span {
@@ -1417,6 +1477,7 @@ footer .bottom_footer p a:hover {
   .contact_sec .contact_form .content_contact {
     width: 100%;
     border-right: none;
+    border-bottom: 2px solid var(--main-color);
   }
   .contact_sec .contact_form iframe {
     width: 100%;

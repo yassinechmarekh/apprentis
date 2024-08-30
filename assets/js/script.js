@@ -79,8 +79,8 @@ back_to_top.addEventListener("click", function () {
 function sendEmail() {
   Email.send({
     Host: "smtp.gmail.com",
-    Username : "yassineok288@gmail.com",
-    Password : "",
+    Username: "yassineok288@gmail.com",
+    Password: "",
     To: "yassineok288@gmail.com",
     From: document.getElementById("email").value,
     Subject: document.getElementById("subject").value,
@@ -97,3 +97,10 @@ function sendEmail() {
     alert.classList.add("active");
   });
 }
+
+// loader
+window.addEventListener("load", function () {
+  document.getElementById("loader-container").style.display = "none";
+  document.body.classList.remove("no-scroll");
+});
+document.body.classList.add("no-scroll");
