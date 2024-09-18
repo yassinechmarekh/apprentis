@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apprentis - Votre centre de langues</title>
+
+    <!-- icon -->
+    <link rel="icon" href="assets/images/logo/logo.png" />
+
+    <!-- link to file css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="loader-container">
+      <span class="loader"></span>
+    </div>
+
+    <header>
+      <div class="top_header">
+        <div class="container">
+          <ul class="header_info">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>En face de d'Issaf 2222 El Jadida</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone-volume"></i>
+              <a href="tel:0608819926">+212 608 819 926</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-business-time"></i>
+              <span>Lundi - Samedi 8.00 - 18.00</span>
+            </li>
+          </ul>
+          <ul class="follow-us">
+            <li>Suivez-nous :</li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo/logo.png" alt="" />
+            <h1>apprentis center</h1>
+          </a>
+          <div class="bg_overlay" onclick="close_menu()"></div>
+          <ul class="page_nav">
+            <div class="top_menu_mobile">
+              <div class="logo_mobile">
+                <img src="assets/images/logo/logo.png" alt="" />
+                <h1>apprentis center</h1>
+              </div>
+              <div class="close_menu">
+                <i onclick="close_menu()" class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="index.html#about">a propos</a></li>
+            <li><a href="index.html#course">cours</a></li>
+            <li><a href="index.html#tarif">tarif</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+          </ul>
+          <div class="phone_nav">
+            <a href="tel:0608819926"
+              ><i class="fa-solid fa-phone"></i> <span>appeler</span></a
+            >
+          </div>
+          <div class="open_menu">
+            <i onclick="open_menu()" class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="banner_top_page">
+      <img src="assets/images/banner/banner$.jpg" alt="" />
+      <div class="links_page">
+        <a href="index.html"><h3>accueil</h3></a>
+        <i class="fa-solid fa-arrow-right"></i>
+        <h3>inscription</h3>
+      </div>
+    </section>
+
+    <section class="inscription_sec">
+      <div class="container">
+        <div class="main_inscription">
+          <div class="inscription_form">
+            <h1>formulaire d'inscription</h1>
+            <h5>Merci de choisir Apprentis !</h5>
+            <p>
+              Pour effectuer votre inscription, nous vous invitons à remplir le
+              formulaire ci-dessous. Veuillez indiquer vos coordonnées ainsi que
+              le cours de votre choix.
+            </p>
+            <form method="post">
+              <div class="double_input">
+                <div class="single_input">
+                  <label for="lastname" class="active">nom</label>
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    required
+                    autofocus
+                  />
+                </div>
+                <div class="single_input">
+                  <label for="firstname">prénom</label>
+                  <input type="text" name="firstname" id="firstname" required />
+                </div>
+              </div>
+              <div class="input_one">
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="input_one">
+                <label for="phone">téléphone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="double_input">
+                <div class="single_input">
+                  <label for="school_cycle">cycle scolaire</label>
+                  <select name="school_cycle" id="school_cycle" required>
+                    <option value="null">
+                      Selectionner votre cycle scolaire
+                    </option>
+                    <option value="Primaire">Primaire</option>
+                    <option value="Collège">Collège</option>
+                    <option value="Lycée">Lycée</option>
+                    <option value="Supérieur">Supérieur</option>
+                  </select>
+                </div>
+                <div class="single_input">
+                  <label for="school_level">niveau scolaire</label>
+                  <select name="school_level" id="school_level" required>
+                    <option value="">Selectionner votre niveau scolaire</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input_one">
+                <label for="select_course" id="course">Choisissez le cours que vous voulez</label>
+                <select name="select_course" id="select_course" required>
+                  <option value="">Selectionner un cours</option>
+                  <option value="Langue Française">Langue Française</option>
+                  <option value="Langue Anglaise">Langue Anglaise</option>
+                  <option value="Langue Allemande">Langue Allemande</option>
+                  <option value="Langue Espagnole">Langue Espagnole</option>
+                  <option value="Mathématique">Mathématique</option>
+                  <option value="Physique">Physique</option>
+                </select>
+              </div>
+              <button type="submit">s'inscrire</button>
+            </form>
+          </div>
+          <img src="assets/images/inscription/inscription.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <button class="btn_back_to_top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <footer>
+      <div class="container">
+        <div class="footer_sections">
+          <div class="footer_single_sec">
+            <h1>Entrer en contact</h1>
+            <div class="content">
+              <ul class="contact_info">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>En face de d'Issaf 2222 El Jadida</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>apprentis@info.com</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+212 608 819 926</span>
+                </li>
+              </ul>
+              <ul class="social_links">
+                <a href="#"
+                  ><li><i class="fa-brands fa-instagram"></i></li
+                ></a>
+                <a href="#"
+                  ><li><i class="fa-brands fa-facebook"></i></li
+                ></a>
+                <a href="#"
+                  ><li><i class="fa-brands fa-linkedin"></i></li
+                ></a>
+                <a href="#"
+                  ><li><i class="fa-brands fa-x-twitter"></i></li
+                ></a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_single_sec">
+            <h1>Liens Rapides</h1>
+            <ul class="quick_links">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">accueil</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">a propos</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <a href="#">cours</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <a href="#">taris</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer_single_sec">
+            <h1>Cours</h1>
+            <ul class="quick_links">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">Cours de Français</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">Cours d'Anglais</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">Cours d'Espagnol</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="#">Cours d'Allemand</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer_single_sec">
+            <h1>Galerie de photos</h1>
+            <div class="gallery">
+              <img src="assets/images/gallery/1.jpg" alt="" />
+              <img src="assets/images/gallery/2.jpg" alt="" />
+              <img src="assets/images/gallery/3.jpg" alt="" />
+              <img src="assets/images/gallery/4.jpg" alt="" />
+              <img src="assets/images/gallery/5.jpg" alt="" />
+              <img src="assets/images/gallery/6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom_footer">
+          <p>
+            &copy; <span>Apprentis</span>, All Right Reserved. Designed By
+            <a
+              href="https://www.linkedin.com/in/yassine-chmarekh/"
+              target="_blank"
+              >Yassine_ChM</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- link js  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/inscription.js"></script>
+  </body>
+</html>

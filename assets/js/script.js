@@ -1,43 +1,9 @@
-// hero-sec swip
-var swiper = new Swiper(".slide-swp", {
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullests: true,
-  },
-  autoplay: {
-    delay: 2500,
-  },
-  loop: true,
+// loader
+window.addEventListener("load", function () {
+  document.getElementById("loader-container").style.display = "none";
+  document.body.classList.remove("no-scroll");
 });
-
-// plans swip
-var swiper = new Swiper(".plans", {
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullests: true,
-  },
-  slidesPerView: 4,
-  spaceBetween: 30,
-  autoplay: {
-    delay: 5000,
-  },
-  loop: true,
-  breakpoints: {
-    1500: {
-      slidesPerView: 4,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-    550: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    0: {
-      slidesPerView: 1,
-    },
-  },
-});
+document.body.classList.add("no-scroll");
 
 // open & close menu
 menu = document.querySelector(".page_nav");
@@ -52,6 +18,7 @@ function close_menu() {
   menu.classList.remove("active");
   bg_overlay.classList.remove("active");
 }
+
 
 // Scroll to top & show or hide the button
 let back_to_top = document.querySelector(".btn_back_to_top");
@@ -75,49 +42,5 @@ back_to_top.addEventListener("click", function () {
   });
 });
 
-// contact form
-const form = document.querySelector(
-  ".contact_sec .contact_form .content_contact form"
-);
-const alert = document.querySelector(
-  ".contact_sec .contact_form .content_contact .alert-success"
-);
 
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const subject = document.getElementById('subject');
-const message = document.getElementById('message');
 
-function sendEmail() {
-  const BodyMessage = `
-    Nom : ${name.value} <br>
-    Email : ${email.value} <br>
-    Sujet : ${subject.value} <br>
-    Message : ${message.value} <br>
-  `;
-
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username : "yassinechmarekh88@gmail.com",
-    Password : "05EC02FB29BA45BE780038FCF7D8A7B0E8C9",
-    To: "yassinechmarekh88@gmail.com",
-    From: "yassinechmarekh88@gmail.com",
-    Subject: subject.value,
-    Body: BodyMessage,
-  }).then(() => {
-    form.classList.add("send");
-    alert.classList.add("active");
-  });
-}
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  sendEmail();
-});
-
-// loader
-window.addEventListener("load", function () {
-  document.getElementById("loader-container").style.display = "none";
-  document.body.classList.remove("no-scroll");
-});
-document.body.classList.add("no-scroll");

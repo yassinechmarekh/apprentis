@@ -75,16 +75,15 @@ body {
   background: var(--main-color);
 }
 
-.no-scroll{
+.no-scroll {
   overflow: hidden;
 }
 
 /* end scrollbar */
 
-
 /* start loader */
 
-#loader-container{
+#loader-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -105,13 +104,14 @@ body {
   margin: 20px auto;
   position: relative;
   background: var(--main-color);
-  color: #FFF;
+  color: #fff;
   box-sizing: border-box;
   animation: animloader 0.3s 0.3s linear infinite alternate;
 }
 
-.loader::after, .loader::before {
-  content: '';
+.loader::after,
+.loader::before {
+  content: "";
   width: 8px;
   height: 40px;
   border-radius: 4px;
@@ -121,7 +121,7 @@ body {
   transform: translateY(-50%);
   left: 20px;
   box-sizing: border-box;
-  animation: animloader 0.3s  0.45s  linear infinite alternate;
+  animation: animloader 0.3s 0.45s linear infinite alternate;
 }
 .loader::before {
   left: -20px;
@@ -129,16 +129,18 @@ body {
 }
 
 @keyframes animloader {
-  0%   { height: 48px} 
-  100% { height: 4px}
+  0% {
+    height: 48px;
+  }
+  100% {
+    height: 4px;
+  }
 }
-
 
 /* end loader */
 
-
 /* start btn back to top */
-.btn_back_to_top{
+.btn_back_to_top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -157,13 +159,12 @@ body {
   z-index: 99;
 }
 
-.btn_back_to_top:hover{
+.btn_back_to_top:hover {
   background-color: var(--main-color);
   color: var(--dark-color);
 }
 
 /* end btn back to top */
-
 
 /* start header */
 header .top_header {
@@ -347,6 +348,7 @@ header nav .open_menu {
   height: 100%;
   object-fit: cover;
   filter: blur(4px);
+  transform: scaleY(1.05);
 }
 
 .hero-sec .slide-swp .swiper-pagination span {
@@ -624,6 +626,19 @@ header nav .open_menu {
 .course_sec .courses .single_course .content_text p {
   font-size: 12px;
 }
+
+.course_sec .courses .single_course .content_text a {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--dark-color);
+  transition: 0.3s ease-in-out;
+}
+
+.course_sec .courses .single_course .content_text a:hover {
+  transform: scale(1.03);
+}
 /* end course_sec */
 
 /* start tarif_sec */
@@ -846,11 +861,11 @@ header nav .open_menu {
 }
 
 .contact_sec .contact_form .content_contact .alert-success,
-.contact_sec .contact_form .content_contact form.send{
+.contact_sec .contact_form .content_contact form.send {
   display: none;
 }
 
-.contact_sec .contact_form .content_contact .alert-success.active{
+.contact_sec .contact_form .content_contact .alert-success.active {
   display: block;
   padding: 20px;
   background-color: #d4edda;
@@ -859,7 +874,6 @@ header nav .open_menu {
   border-radius: 5px;
   font-size: 14px;
 }
-
 
 /* end contact_sec */
 
@@ -1030,7 +1044,7 @@ footer .bottom_footer p a:hover {
     align-items: center;
     gap: 10px;
   }
-  header nav .page_nav li a{
+  header nav .page_nav li a {
     font-size: 14px;
   }
   header .top_header .follow-us,
@@ -1067,6 +1081,9 @@ footer .bottom_footer p a:hover {
     right: 0;
   }
   header nav .page_nav .top_menu_mobile {
+    z-index: 100;
+  }
+  header nav .page_nav .top_menu_mobile {
     padding: 20px;
     display: flex;
     align-items: center;
@@ -1094,18 +1111,19 @@ footer .bottom_footer p a:hover {
     color: var(--main-color);
     transform: rotate(180deg);
   }
-  header nav .page_nav .top_menu_mobile .bg_overlay {
+  header nav .bg_overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 0;
+    width: 100vw;
     height: 100vh;
+    display: none;
     background-color: #22222237;
     transition: 0.3s ease-in-out;
     z-index: 99;
   }
-  header nav .page_nav .top_menu_mobile .bg_overlay.active {
-    width: calc(100% - 300px);
+  header nav .bg_overlay.active {
+    display: block;
   }
   header nav .page_nav li.active::after {
     width: 0%;
@@ -1123,6 +1141,7 @@ footer .bottom_footer p a:hover {
   }
   header nav .open_menu i:hover {
     color: var(--main-color);
+    transform: rotate(90deg);
   }
   header nav .logo img {
     width: 50px;
@@ -1133,7 +1152,7 @@ footer .bottom_footer p a:hover {
 }
 
 @media (max-width: 700px) {
-  .hero-sec .slide-swp .swiper-slide img{
+  .hero-sec .slide-swp .swiper-slide img {
     width: auto;
   }
 }
@@ -1330,6 +1349,7 @@ footer .bottom_footer p a:hover {
   .course_sec .courses .single_course .content_text h2 {
     font-size: 23px;
   }
+  .course_sec .courses .single_course .content_text a,
   .course_sec .courses .single_course .content_text h4 {
     font-size: 16px;
   }
@@ -1351,6 +1371,7 @@ footer .bottom_footer p a:hover {
   .course_sec .courses .single_course .content_text h2 {
     font-size: 20px;
   }
+  .course_sec .courses .single_course .content_text a,
   .course_sec .courses .single_course .content_text h4 {
     font-size: 15px;
   }
@@ -1399,6 +1420,7 @@ footer .bottom_footer p a:hover {
   .course_sec .courses .single_course .content_text h2 {
     font-size: 16px;
   }
+  .course_sec .courses .single_course .content_text a,
   .course_sec .courses .single_course .content_text h4 {
     font-size: 14px;
   }
@@ -1426,6 +1448,7 @@ footer .bottom_footer p a:hover {
   .course_sec .courses .single_course .content_text h2 {
     font-size: 14px;
   }
+  .course_sec .courses .single_course .content_text a,
   .course_sec .courses .single_course .content_text h4 {
     font-size: 12px;
   }
@@ -1553,4 +1576,399 @@ footer .bottom_footer p a:hover {
 
 /************************************************************************************************/
 /*************************************** end responsive   ***************************************/
+/************************************************************************************************/
+
+/************************************************************************************************/
+/********************************  start inscription page  **************************************/
+/************************************************************************************************/
+
+.banner_top_page {
+  height: 200px;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+}
+
+.banner_top_page img {
+  width: 100%;
+}
+
+.banner_top_page::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #273458a7;
+  z-index: 1;
+}
+
+.banner_top_page .links_page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 3;
+}
+
+.banner_top_page .links_page h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.banner_top_page .links_page i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.banner_top_page .links_page a h3 {
+  color: var(--main-color);
+}
+
+/* start inscription_sec */
+
+.inscription_sec {
+  padding: 40px 0;
+}
+
+.inscription_sec .main_inscription {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--dark-color);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.inscription_sec .main_inscription .inscription_form {
+  width: 50%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inscription_sec .main_inscription .inscription_form h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-size: 40px;
+}
+
+.inscription_sec .main_inscription .inscription_form h1::first-letter {
+  text-transform: capitalize;
+}
+
+.inscription_sec .main_inscription .inscription_form h5 {
+  color: var(--dark-color);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.inscription_sec .main_inscription .inscription_form p {
+  font-size: 14px;
+}
+
+.inscription_sec .main_inscription img {
+  width: 50%;
+  border-left: 1px solid var(--dark-color);
+}
+
+.inscription_sec .main_inscription .inscription_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inscription_sec .main_inscription .inscription_form form .double_input {
+  display: flex;
+  gap: 10px;
+}
+
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .double_input
+  .single_input {
+  width: 50%;
+}
+
+.inscription_sec .main_inscription .inscription_form form .input_one {
+  width: 100%;
+}
+
+.inscription_sec .main_inscription .inscription_form form .input_one,
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .double_input
+  .single_input {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.inscription_sec .main_inscription .inscription_form form .input_one label,
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .double_input
+  .single_input
+  label {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: var(--parag-color);
+}
+
+.inscription_sec .main_inscription .inscription_form form .input_one #course {
+  text-transform: none;
+}
+
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .input_one
+  label.active,
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .double_input
+  .single_input
+  label.active {
+  color: var(--main-color);
+}
+
+.inscription_sec .main_inscription .inscription_form form .input_one select,
+.inscription_sec .main_inscription .inscription_form form .input_one input,
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .double_input
+  .single_input
+  select,
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .double_input
+  .single_input
+  input {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--parag-color);
+  border: 1px solid var(--parag-color);
+  border-radius: 3px;
+  outline: none;
+}
+
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .input_one
+  select:focus,
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .input_one
+  input:focus,
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .double_input
+  .single_input
+  select:focus,
+.inscription_sec
+  .main_inscription
+  .inscription_form
+  form
+  .double_input
+  .single_input
+  input:focus {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.inscription_sec .main_inscription .inscription_form form button {
+  width: fit-content;
+  margin-top: 20px;
+  padding: 7px 15px;
+  font-size: 14px;
+  text-transform: capitalize;
+  background-color: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.inscription_sec .main_inscription .inscription_form form button:hover {
+  background-color: transparent;
+  color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+/* end inscription_sec */
+
+/* start responsive */
+@media (max-width: 1200px) {
+  .inscription_sec .main_inscription {
+    width: 100%;
+  }
+  .banner_top_page img {
+    height: 100%;
+  }
+  .banner_top_page {
+    height: 180px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .inscription_sec .main_inscription img {
+    height: 600px;
+  }
+}
+
+@media (max-width: 950px) {
+  .inscription_sec .main_inscription img {
+    display: none;
+  }
+  .inscription_sec .main_inscription .inscription_form {
+    width: 100%;
+  }
+  .inscription_sec .main_inscription .inscription_form h1 {
+    font-size: 35px;
+  }
+  .inscription_sec .main_inscription .inscription_form h5 {
+    font-size: 14px;
+  }
+  .inscription_sec .main_inscription .inscription_form form .input_one label,
+  .inscription_sec
+    .main_inscription
+    .inscription_form
+    form
+    .double_input
+    .single_input
+    label,
+  .inscription_sec .main_inscription .inscription_form form button,
+  .inscription_sec .main_inscription .inscription_form p {
+    font-size: 13px;
+  }
+  .inscription_sec .main_inscription .inscription_form form .input_one select,
+  .inscription_sec .main_inscription .inscription_form form .input_one input,
+  .inscription_sec
+    .main_inscription
+    .inscription_form
+    form
+    .double_input
+    .single_input
+    select,
+  .inscription_sec
+    .main_inscription
+    .inscription_form
+    form
+    .double_input
+    .single_input
+    input {
+    font-size: 11px;
+  }
+  .inscription_sec .main_inscription .inscription_form form button {
+    margin-top: 10px;
+  }
+  .banner_top_page {
+    height: 160px;
+  }
+  .banner_top_page .links_page h3 {
+    font-size: 18px;
+  }
+  .banner_top_page .links_page i {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .inscription_sec .main_inscription .inscription_form h1 {
+    font-size: 30px;
+  }
+  .inscription_sec .main_inscription .inscription_form h5 {
+    font-size: 13px;
+  }
+  .inscription_sec .main_inscription .inscription_form form .input_one label,
+  .inscription_sec
+    .main_inscription
+    .inscription_form
+    form
+    .double_input
+    .single_input
+    label,
+  .inscription_sec .main_inscription .inscription_form form button,
+  .inscription_sec .main_inscription .inscription_form p {
+    font-size: 12px;
+  }
+  .inscription_sec .main_inscription .inscription_form form .input_one select,
+  .inscription_sec .main_inscription .inscription_form form .input_one input,
+  .inscription_sec
+    .main_inscription
+    .inscription_form
+    form
+    .double_input
+    .single_input
+    select,
+  .inscription_sec
+    .main_inscription
+    .inscription_form
+    form
+    .double_input
+    .single_input
+    input {
+    font-size: 10px;
+  }
+  .inscription_sec .main_inscription .inscription_form form button {
+    margin-top: 5px;
+  }
+  .inscription_sec .main_inscription .inscription_form form .double_input {
+    flex-direction: column;
+  }
+  .inscription_sec
+    .main_inscription
+    .inscription_form
+    form
+    .double_input
+    .single_input {
+    width: 100%;
+  }
+  .banner_top_page .links_page h3 {
+    font-size: 16px;
+  }
+  .banner_top_page .links_page i {
+    font-size: 14px;
+  }
+  .banner_top_page {
+    height: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner_top_page {
+    height: 100px;
+  }
+}
+/* end responsive */
+/************************************************************************************************/
+/********************************   end inscription page   **************************************/
 /************************************************************************************************/
